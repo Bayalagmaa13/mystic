@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Mystic",
+    "slug": "mystic",
+    "scheme": "mystic",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0F0B1E",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "mn.ufe.mystic"
+    },
+    "android": {
+      "package": "mn.ufe.mystic",
+      "edgeToEdgeEnabled": true
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        { "backgroundColor": "#0F0B1E", "imageWidth": 160 }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Профайл зургаа сонгохын тулд Mystic таны зургийн цомогт хандана.",
+          "cameraPermission": "Профайл зураг авахын тулд Mystic таны камерт хандана."
+        }
+      ],
+      [
+        "expo-notifications",
+        { "color": "#E8C27A" }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": false
+    },
+    "extra": {
+      "eas": {
+        "projectId": ""
+      }
+    }
+  }
+}
