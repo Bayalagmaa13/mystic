@@ -1,0 +1,11 @@
+# Supabase CLI тохиргоо (зөвхөн функцуудын хэсэг)
+[functions.qpay-create-invoice]
+verify_jwt = true
+
+[functions.qpay-check]
+verify_jwt = true
+
+# QPay сервер Supabase JWT илгээдэггүй тул энэ функц JWT шалгахгүй.
+# Оронд нь нууц callback token + QPay-ээс дахин шалгах аргаар хамгаална.
+[functions.qpay-webhook]
+verify_jwt = false
